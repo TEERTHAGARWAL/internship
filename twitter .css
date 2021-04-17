@@ -1,0 +1,154 @@
+:root{
+    --main-color: #1da1f2;
+    --dark-color: #14171a;
+    --footer-link-color: #aab8c2;
+    --footer-top-border-color: #e6ecf0;
+}
+
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+p,a,h1,h2,h3,input,span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 53vw 47vw;
+    grid-template-rows: 95vh 5vh;
+}
+
+.container .left-box{
+    background: url('background.jpg');
+    grid-column: 1/2;
+}
+
+.container .right-box .upper-right{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 5rem;
+}
+
+.container .login form{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    
+}
+
+.container .login form input{
+    margin-right: 10px;
+    border-color: var(--footer-link-color);
+    border-width: 0.2px;
+    border-radius: 4px;
+    height: 60px ;
+}
+
+.container .login a{
+    margin: 235px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container .right-box{
+    background-color: #fff;
+    position: relative;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: left;
+}
+
+.container .right-box .card{
+   
+    min-width: 400px;
+    padding: 0 60px;
+}
+
+.container .right-box .card .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .right-box .card .head .logo-icon{
+    font-size: 50px;
+    color: var(--main-color);
+}
+.container .right-box .card h1{
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 70px;
+    color: var(--dark-color);
+}
+
+.container .right-box .card p{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 70px;
+    color: var(--dark-color);
+}
+
+.container .bottom-box{
+    background-color: #fff;
+    grid-column:1/-1 ;
+
+}
+
+.container .bottom-box ul{
+    text-align: center;
+}
+
+.container .bottom-box ul li{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.container .bottom-box ul li a{
+    font-size: 12px;
+    color: var(--footer-link-color);
+    text-decoration: none;
+}
+
+button.btn{
+    display:  block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 26px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+button.block{
+    width: 60%;
+    margin-top: 1rem;
+}
+
+button.block2{
+    width: 40%;
+    margin-top: 0rem;
+}
+
+button.primary{
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+button.outline{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
